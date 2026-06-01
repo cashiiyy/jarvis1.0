@@ -5,3 +5,7 @@ livekit.txt
 *.toml
 
 Dockerfile.txt
+
+__pycache__/
+
+KMS/

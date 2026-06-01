@@ -9,7 +9,7 @@ from email.mime.text import MIMEText
 from typing import Optional
 
 @function_tool()
-async def get_weather(
+async def getweather(
     context: RunContext,  # type: ignore
     city: str) -> str:
     """
@@ -29,7 +29,7 @@ async def get_weather(
         return f"An error occurred while retrieving weather for {city}." 
 
 @function_tool()
-async def search_web(
+async def searchweb(
     context: RunContext,  # type: ignore
     query: str) -> str:
     """
@@ -44,7 +44,7 @@ async def search_web(
         return f"An error occurred while searching the web for '{query}'."    
 
 @function_tool()    
-async def send_email(
+async def sendemail(
     context: RunContext,  # type: ignore
     to_email: str,
     subject: str,
